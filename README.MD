@@ -4,7 +4,7 @@ Running
 1. cd in server directory and run: "npm start"
 2. cd in client directory and run: "python manage.py runserver"
 
-Make sure ports 4200 and 8000 are free!
+Make sure ports 4200 and 8000 are free and use Mozilla Firefox if possible!
 
 Features included
 -----------------
