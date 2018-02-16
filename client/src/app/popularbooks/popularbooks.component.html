@@ -1,0 +1,16 @@
+<h3>Latest books<h3>
+
+<div *ngIf="books">
+<div class="row">
+  <div *ngFor="let book of books.results" class="col-sm-2" routerLink="/book/{{book.id}}/1">
+    <div >
+      <img class="book_thumbnail" src="{{book.imagelink}}">
+      <div>
+        <h4 class="book-title">{{book.title}}</h4>
+        <p class="book-details">{{book.author}},<br> {{book.pub_year}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>

@@ -1,0 +1,31 @@
+<div class="container">
+
+  <h1>All books</h1>
+<div class="booksbyname">
+
+  <div class="row tabletitlediv">
+    <div class="col-md-3 col-xs-2 tabletitles">Title</div>
+    <div class="col-md-3 col-xs-2 tabletitles">Author</div>
+    <div class="col-md-2 col-xs-1 tabletitles">Publisher</div>
+    <div class="col-md-1 col-xs-1 tabletitles">Date</div>
+    <div class="col-md-2 col-xs-2 tabletitles">ISBN</div>
+  </div>
+<div *ngIf="allbooks">
+  <a *ngFor="let book of allbooks.results" routerLink="/book/{{book.id}}/1" class="bookrow row">
+    <div class="col-md-3 col-xs-2 ">{{book.title}}</div>
+    <div class="col-md-3 col-xs-2 ">{{book.author}}</div>
+    <div class="col-md-2 col-xs-1 ">{{book.publisher}}</div>
+    <div class="col-md-1 col-xs-1 ">{{book.pub_year}}</div>
+    <div class="col-md-2 col-xs-2 ">{{book.isbn}}</div>
+
+  </a>
+</div>
+
+
+<nav aria-label="Page navigation">
+<ul *ngFor="let paje of pages" class="pagination">
+  <li><a (click)="goto(paje)">{{paje}}</a></li>
+</ul>
+</nav>
+</div>
+</div>

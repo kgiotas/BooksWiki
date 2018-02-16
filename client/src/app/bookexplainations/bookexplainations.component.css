@@ -1,0 +1,36 @@
+#main_book_info{
+  margin-bottom: 15px
+}
+#bookdetails{
+  margin-top: 5px;
+  font-family: 'noto-sans';
+  font-size: 25px;
+}
+
+#booktitle{
+  font-weight: bold;
+}
+
+#bookauthor{
+  text-align: right;
+  left: 0;
+  padding-top: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+#bookpublisher{
+  padding-top: 15px;
+  font-size: 21px;
+}
+
+#bookISBN{
+  font-size: 21px;
+}
+
+#book_created_by{
+  text-align: right;
+  font-size: 15px;
+  color: rgb(150, 150, 150);
+  padding-top: 85px;
+}

@@ -1,0 +1,62 @@
+<div class="container">
+
+  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#addexpmodal">
+    <i class="fa fa-plus" aria-hidden="true"></i> Add your own explaination
+  </button>
+  <div>
+  <div class="row" id="main_book_info">
+    <div class="col-sm-5">
+    <div class="thumbnail">
+
+    <img src="{{book?.imagelink}}" alt="{{book?.title}} cover">
+    </div>
+  </div>
+  <div id="bookdetails" class="col-sm-7">
+
+    <div id="booktitle">{{book?.title}}</div>
+    <div id="bookauthor">Author: {{book?.author}}</div>
+    <div id="bookpublisher">Publisher: {{book?.publisher}}</div>
+    <div id="bookISBN">ISBN: {{book?.isbn}}</div>
+<div id=book_created_by>Created by <i class="fa fa-user" aria-hidden="true"></i> {{book?.createdby}} at {{book?.createdday}}</div>
+  </div>
+
+
+  </div>
+</div>
+<div *ngFor="let explaination of explainations">
+  <app-explaination [explaination]="explaination"></app-explaination>
+</div>
+
+</div>
+
+<!-- Modal Adds explaination-->
+<div class="modal fade" id="addexpmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Add an explaination</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="reg_mail">Page</label>
+          <input name="page" type="text" class="form-control" id="addexp_page" placeholder="E.g.: 12" form="addexp_form">
+        </div>
+        <div class="form-group">
+          <label for="contenta">Explaination</label>
+          <textarea name="contenta" class="form-control" rows="4" cols="50"  form="addexp_form"></textarea>
+        </div>
+
+        <form action="http://localhost:8000/api/addexp" method="POST" id="addexp_form">
+          <input type="hidden" name="csrfmiddlewaretoken" value="{{csrfcookie}}">
+          <input type="hidden" name="bookid" value="{{book?.id}}">
+          <input type="hidden" name="username" value="{{username}}">
+          <button type="submit" class="btn btn-default">Submit</button>
+          <button class="btn btn-default">Cancel</button>
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+</div>

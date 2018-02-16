@@ -1,0 +1,34 @@
+<nav class="navbar navbar-default">
+  <div class="container" >
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" routerLink="/main"><i class="fa fa-book" aria-hidden="true"></i> {{title}}</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling <div *ngIf="condition">...</div>-->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a routerLink="/allbooks">All books</a></li>
+        <li><a *ngIf="auth?.isLoggedIn" routerLink="/addbook">Add a book</a></li>
+
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li *ngIf="auth?.isLoggedIn"><a href="#">Welcome, {{auth?.username}}</a></li>
+        <li *ngIf="auth?.isLoggedIn"><a (click)="logout()" >Logout</a></li>
+        <li *ngIf="!auth?.isLoggedIn"><a routerLink="/register">Signup</a></li>
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</div>
+</nav>
+
+  <router-outlet></router-outlet>

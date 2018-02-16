@@ -1,0 +1,15 @@
+#bookcreator_submit_block{
+  float:right;
+}
+.form-group{
+  background-color: #f4e1b3;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+.description{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #878685;
+  font-size: 85%;
+}

@@ -1,0 +1,15 @@
+.book_thumbnail{
+  max-width: 150px;
+  max-height: 100px;
+  display:block;
+    margin:auto;
+}
+.book-details{
+  color: #808080;
+  font-size: 0.4em;
+  text-align: center;
+}
+.book-title{
+  text-align: center;
+  font-size: 0.6em;
+}

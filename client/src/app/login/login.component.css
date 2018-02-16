@@ -1,0 +1,24 @@
+.alli{
+   color: #fff;
+   font-size: 1.75em;
+   margin-bottom: 0.5em;
+}
+
+h1{  text-align: center;
+  color: #fff;
+  font-size: 1.75em;
+  margin-bottom: 0.5em;}
+
+  .title{
+    margin-top: 0;
+    color: #fff;
+    font-size: 1.2em;
+  }
+label{
+    color: #fff;
+}
+#sign-up-info{
+  color: #fff;
+  font-size: 1em;
+  padding: 10px 5px 5px 0px;
+}

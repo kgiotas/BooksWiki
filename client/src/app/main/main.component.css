@@ -1,0 +1,173 @@
+
+.jumbotron {
+  margin-top: 10px;
+  position: relative;
+  background: url('/assets/pics/one.jpg') bottom left no-repeat;
+  min-height: 400px;
+  background-size: 100%;
+  padding: 10px;
+}
+.jumbotron-header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 70%;
+  padding: 35px 30px;
+}
+.jumbotron-content {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 1;
+  padding: 0px 15px;
+  width: 30%;
+  height: 100%;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.66);
+  border-radius: 5px;
+}
+
+.jumbotron-content h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 1.75em;
+  margin-bottom: 0.5em;
+}
+
+.jumbotron p {
+  margin-top: 0;
+  color: #fff;
+  font-size: 1.2em;
+}
+.jumbotron-header p{
+  color: #fff;
+  padding-left: 25px;
+  font-size: 2em;
+}
+.jumbotron-header h1{
+  padding-top: 30px;
+  font-size: 7.55em;
+  color: #fff;
+}
+
+.jumbotron-content label {
+  color: #fff;
+}
+
+#sign-up-info{
+  font-size: 1em;
+  padding: 10px 5px 5px 0px;
+}
+button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jumbotron .img-credit {
+  color: #bbb;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 10px;
+  margin: 5px;
+  padding: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.jumbotron .img-credit a, .jumbotron .img-credit a:hover {
+  color: #;
+}
+
+
+@media(min-width: 992px) {
+  .jumbotron .btn {
+    padding: 5px 10%;
+  }
+}
+
+@media(max-width: 991px) {
+  .jumbotron-content {
+    position: absolute;
+    height: 100%;
+  }
+
+  .jumbotron-lg-only {
+    display: none;
+  }
+
+  .jumbotron-header p{
+    color: #fff;
+    padding-left: 25px;
+    font-size: 1.7em;
+  }
+  .jumbotron-header h1{
+    padding-top: 30px;
+    font-size: 6.5em;
+    color: #fff;
+  }
+}
+
+@media(max-width: 768px) {
+  .jumbotron {
+    background-size: 100% 100%;
+  }
+  .jumbotron-header {
+    top: 0;
+    height: 100%;
+    width: 50%;
+  }
+  .jumbotron-content {
+    top: 0;
+    height: 100%;
+    width: 50%;
+  }
+
+  .jumbotron-header p{
+    color: #fff;
+    padding-left: 10px;
+
+    font-size: 1.3em;
+  }
+  .jumbotron-header h1{
+    padding-top: 30px;
+    padding-right: 10px;
+    font-size: 2em;
+    font-weight: bold;
+    padding-bottom: 15px;
+    color: #fff;
+  }
+
+  #sign-up-info{
+    font-size: 0.9em;
+    padding: 10px 5px 5px 0px;
+  }
+}
+
+@media(min-device-width: 320px) and (max-device-width: 568px) {
+  .jumbotron {
+    background: #3667A6;
+    min-height: 275px;
+  }
+
+  .jumbotron-content {
+    width: 100%;
+    height: 100%;
+  }
+  .jumbotron .img-credit {
+    display: none;
+  }
+
+  .jumbotron-header p{
+    color: #fff;
+    padding-left: 25px;
+    font-size: 0.2em;
+  }
+  .jumbotron-header h1{
+    padding-top: 30px;
+    font-size: 2em;
+    color: #fff;
+  }
+}

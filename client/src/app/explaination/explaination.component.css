@@ -1,0 +1,6 @@
+#explaination_footer_container{width:100%;}
+#explaination_footer_container_left{float:left;width:100px;}
+#explaination_footer_container_right{float:right;width:100px;}
+#explaination_footer_container_center{margin:0 auto;width:100px;}
+#karma_fake_button{border: transparent; background-color: transparent;pointer-events: none;}
+#karma_fake_button:disabled,#karma_fake_button[disabled]{color: black;pointer-events: none;}
