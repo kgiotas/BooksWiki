@@ -1,8 +1,8 @@
 Running
 --------
 
-1. cd in server directory and run: "npm start"
-2. cd in client directory and run: "python manage.py runserver"
+1. cd in client directory and run: "npm install" and next "npm start"
+2. cd in server directory and run: "python manage.py runserver"
 
 Make sure ports 4200 and 8000 are free and use Mozilla Firefox if possible!
 
@@ -18,5 +18,5 @@ Features included
 Credentials
 -----------
 
-Username: admin
+Username: admin  
 Password: kostas1495
